@@ -9,6 +9,28 @@
   box-sizing: border-box;
 }
 
+section{
+  padding: 10px 20px;
+}
+
 body {
-    background-color: #f4efec;
+  background-color: #f4efec;
+}
+
+.btn-default {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d67db2;
+  border-radius: 12px;
+  padding: 10px 15px;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.btn-default:hover {
+  background-color: #d64d9f;
 }

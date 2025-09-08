@@ -8,30 +8,38 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
       integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="src/styles/styles.css" />
+    <link rel="stylesheet" href="src/styles/sectionMenu.css" />
     <link rel="stylesheet" href="src/styles/header.css" />
+    <link rel="stylesheet" href="src/styles/home.css" />
     <title>Confeitaria</title>
   </head>
   <body>
     <header>
       <nav id="nav">
         <ul id="nav-list">
-          <li class="nav-item active" >
+          <li class="nav-item active">
             <a href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a href="#cardapio">Cardapio</a>
           </li>
-          
-          
-            <div class="logo">
-                <img src="./src/img/width_500.webp" alt="logo" />
-            </div> 
-          
-         
-          
+          <div class="logo">
+            <img src="./src/img/confeitaria.png" alt="logo" />
+          </div>
+
           <li class="nav-item">
             <a href="#sobre">Sobre</a>
           </li>
@@ -62,6 +70,116 @@
       </div>
     </header>
 
+    <main class="home">
+      <div class="cta">
+        <div class="text-home">
+          <h1>A melhor Confeitaria</h1>
+          <h1>com um sabor <spam>inesquecivel</spam></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit, asperiores
+            perferendis.
+          </p>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="#" class="btn-default"> ir para delivery </a>
+
+          <a href="tel:+55669997" class="phone-bnt">
+            <button class="btn-default">
+              <i class="fa-solid fa-phone"></i>
+            </button>
+            (51) 9735-9711
+          </a>
+        </div>
+        <div class="social">
+          <a href="">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+      <div class="image">
+        <img src="src/img/Adobe Express - file.png" alt="img" />
+      </div>
+    </main>
+    <section class="menu">
+      <h2>Cardapio</h2>
+      <h3>As melhores sobremesas para voce</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonialBox">
+              <div class="heart">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <img src="" class="heart" alt="swiper-image" />
+              <h3 class="dish-title">Lorem ipsum dolo</h3>
+              <span class="dish-description"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            </div>
+          </div>
+            <div class="swiper-slide">
+            <div class="testimonialBox">
+              <div class="heart">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <img src="" class="heart" alt="swiper-image" />
+              <h3 class="dish-title">Lorem ipsum dolo</h3>
+              <span class="dish-description"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            </div>
+          </div>
+            <div class="swiper-slide">
+            <div class="testimonialBox">
+              <div class="heart">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <img src="" class="heart" alt="swiper-image" />
+              <h3 class="dish-title">Lorem ipsum dolo</h3>
+              <span class="dish-description"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            </div>
+          </div>
+            <div class="swiper-slide">
+            <div class="testimonialBox">
+              <div class="heart">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <img src="" class="heart" alt="swiper-image" />
+              <h3ss class="dish-title">Lorem ipsum dolo</h3ss>
+              <span class="dish-description"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
     <script src="src/javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
