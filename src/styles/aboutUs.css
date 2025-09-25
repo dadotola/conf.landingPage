@@ -9,10 +9,11 @@
 }
 
 .couple {
-  width: 340px;
-  height: 330px;
+  width: 400px;
+  height: 400px;
   border-radius: 20% 30% 40% 20%;
   margin: 100px;
+  padding-bottom: 25px;
   position: relative;
   z-index: 2;
 }
@@ -22,7 +23,7 @@
   width: 35%;
   height: 50%;
   position: absolute;
-  border-radius: 10% 30% 30% 10%;
+  border-radius: 10% 30% 40% 10%;
   left: 0%;
   z-index: 1;
 }

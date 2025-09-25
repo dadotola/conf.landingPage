@@ -16,10 +16,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <link
+     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+      />
      
     <link href="https://cdn.jsdelivr.net/gh/codeOpacity/op_icons@main/op_icons.all.min.css" rel="stylesheet"/>
                     
@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="src/styles/sectionMenu.css" />
     <link rel="stylesheet" href="src/styles/aboutUs.css" />
     <link rel="stylesheet" href="src/styles/testimonials.css" />
+    <link rel="stylesheet" href="src/styles/footer.css" />
     <link rel="stylesheet" href="src/styles/header.css" />
     <link rel="stylesheet" href="src/styles/home.css" />
     <title>Confeitaria</title>
@@ -74,8 +75,10 @@
         </ul>
       </div>
     </header>
-
-    <main class="home">
+    
+    <main>
+     <section class="home">
+      
       <div class="cta">
         <div class="text-home">
           <h1>A melhor Confeitaria</h1>
@@ -108,17 +111,20 @@
           </a>
         </div>
       </div>
-      <div class="image">
-        <img src="src/img/Adobe Express - file.png" alt="img" />
+      <div class="image-cake">
+        <img src="src/img/Adobe Express - file.png" alt="cake" />
       </div>
-    </main>
+    </section>
+  
     <section class="menu">
       <h2 class="menu-title">Cardapio</h2>
       <h3 class="menu-sub">As melhores sobremesas para voce</h3>
-      <div class="swiper mySwiper">
+
+      <div class="swiper Myswiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="cardapio">
+            <div class="card">
+                <div class="cardapio">
               <div class="heart">
                 <i class="fa-solid fa-heart"></i>
               </div>
@@ -128,9 +134,7 @@
                 alt="swiper-image"
               />
               <h3 class="dish-title">Lorem ipsum dolo</h3>
-              <span class="dish-description"
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
-              >
+              <span class="dish-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span >
 
               <div class="price">
                 <h4>R$20,00</h4>
@@ -139,9 +143,11 @@
                 </button>
               </div>
             </div>
+            </div>
           </div>
           <div class="swiper-slide">
-            <div class="cardapio">
+            <div class="card">
+               <div class="cardapio">
               <div class="heart">
                 <i class="fa-solid fa-heart"></i>
               </div>
@@ -162,9 +168,11 @@
                 </button>
               </div>
             </div>
+            </div>
           </div>
           <div class="swiper-slide">
-            <div class="cardapio">
+            <div class="card">
+                <div class="cardapio">
               <div class="heart">
                 <i class="fa-solid fa-heart"></i>
               </div>
@@ -185,9 +193,11 @@
                 </button>
               </div>
             </div>
+            </div>
           </div>
           <div class="swiper-slide">
-            <div class="cardapio">
+            <div class="card">
+              <div class="cardapio">
               <div class="heart">
                 <i class="fa-solid fa-heart"></i>
               </div>
@@ -208,12 +218,14 @@
                 </button>
               </div>
             </div>
+            </div>
           </div>
           </div>
+           <div class="swiper-pagination"></div>
+           <div class="slider-button swiper-button-prev"></div>
+           <div class="slider-button swiper-button-next"></div>
         </div>
-        <div class="swiper-pagination"></div>
-      
-      </div>
+  
     </section>
 
     <section class="about-us">
@@ -221,21 +233,16 @@
         
         <div class="banner">
           <div class="shape"></div>
-      <img src="src/img/lovely-couple-have-warm-cuddle_273609-44073.jpg" class="couple">
+      <img src="src/img/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTEyL3Jhd3BpeGVsb2ZmaWNlMTBfZnVsbGJvZHlfcGhvdG9fb2Zfcm9tYW50aWNfY291cGxlYV9tYW5fbGlmdGluZ18yZGU3YzM3Yi1hMjBiLTRmZDItOTE5Mi1mNzhlZmY1NmM1YzZfMS5wbmc__1_-removebg.png" class="couple">
       </div>
        
        <div class="us-info">
-        
            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
            Iusto repudiandae impedit accusantium amet, suscipit eos?<br>
             Numquam officia magnam, at eius, ratione ipsum natus veniam quae consequatur labore,<br>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
              Culpa nulla dolore porro odio atque laborum animi pariatur modi repellendus. </p>
-       
-       
       </div>
-      
-     
     </section>
 
     <section class="testimonials">
@@ -394,51 +401,37 @@
           
         </div>
     </section>
+    </main>
 
-    <script src="src/javascript/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        centeredSlides: true,
-        spaceBetween: 30,
-        coverflowEffect: {
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2,
-          slideShadows: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          320: {
-            // celular
-            slidesPerView: 1,
-            centeredSlides: true,
-          },
-          768: {
-            // tablet
-            slidesPerView: 2,
-            centeredSlides: false,
-          },
-          1024: {
-            // computador
-            slidesPerView: 3, // ocupa boa parte da tela
-            centeredSlides: false,
-          },
-        },
-
-        paginatiom: {
-          el: ".swiper-pagination",
-        },
-        loop: true,
-      });
-    </script>
+    <footer>
+      <div class="footer-start">
+        <div class="wave-container">
+         <img src="src/img/wave.svg" class="wave">
+         <img src="src/img/confeitaria.png" class="logo">
+        </div>
+      <div class="info-footer">
+        <img src="src/img/whatsapp.png" class="icon">
+        <p>(21) 0937-6384</p>
+        <img src="src/img/gps.png"  class="icon">
+        <p>rua: antonio santos <br/>horario: 18hrs - 22hrs</p>
+        <img src="src/img/clock.png"  class="icon">
+        <p>horario de funcionamento delivery:  17hrs - 22hrs</p>
+      </div>
+       <div class="social-footer">
+          <a href="">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+   <script src="src/javascript/script.js"></script>
   </body>
 </html>

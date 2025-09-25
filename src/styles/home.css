@@ -1,40 +1,49 @@
 .home {
   background-color: #ebbbcd;
-  height: 450px;
+  height: 500px;
   display: flex;
   padding: 28px 8%;
+  margin-bottom: 100px;
 }
+
 
 .cta {
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin-top: 10px;
+  flex: 1;
 }
 
 .text-home h1 {
   color: #7b203b;
   font-weight: 500;
   font-size: 3rem;
+  flex: 1;
 }
 .text-home h1 spam {
   color: #cd587b;
   font-weight: 500;
   font-size: 3rem;
+  flex: 1;
 }
 
 .text-home p {
   color: #7b203b;
   font-size: 1.2rem;
+  flex: 1;
 }
 
 .cta-buttons {
   display: flex;
   gap: 30px;
+
 }
 .cta-buttons a {
+ 
   text-decoration: none;
   color: #490f29;
+ 
 }
 
 .phone-bnt {
@@ -76,33 +85,87 @@
 .social a:hover {
   box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
 }
-.image img {
+.image-cake img {
   width: 550px;
   height: 550px;
   margin-left: 180px;
-  margin-top: -70px;
+  margin-top: -50px;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1000px) {
   .home {
     min-width: 100%;
-    padding-top: 10px;
+    padding-top: 50px;
+    height: 700px;
+    flex-direction: column;
   }
   .text-home {
-    padding: 10px 10px;
+    padding: 10px 20px;
     text-align: left;
+    margin-left: -20px;
   }
 
   .cta-buttons {
     width: 100%;
-    align-items: center;
+    align-items: start;
+    text-align: start;
+  }
+   .image-cake img {
+    height: 450px;
+    width: 450px;
+    margin-left: 300px;
+    margin-top: -200px;
+  }
+
+}
+@media (max-width: 900px) {
+  .image-cake img {
+    height: 450px;
+    width: 450px;
+    margin-top: 290px;
+    margin-left: 120px;
+    justify-content: center;
+  }
+  .cta {
+    position: absolute;
     text-align: center;
+    margin-top: -30px;
+  }
+  .text-home {
+    text-align: center;
+    font-size: 0.2rem;
+  }
+  .cta-buttons {
+    align-items: center;
+    flex-direction: column;
+    margin-top: -30px;
+    gap: 10px;
+  }
+  .social {
+    justify-content: center;
+    margin-top: -10px;
   }
 }
-@media (max-width: 1180px) {
-  .image img {
-    height: 370px;
-    width: 370px;
- 
+@media (max-width: 800px) {
+  .image-cake img {
+    height: 270px;
+    width: 270px;
+    margin-top: 440px;
+    margin-left: 150px;
+    justify-content: center;
+  }
+  .text-home {
+    text-align: left;
+    font-size: 0.05rem;
+  }
+   .cta-buttons {
+    align-items: start;
+    flex-direction: column;
+    margin-top: -30px;
+    gap: 10px;
+  }
+  .social {
+    justify-content: left;
+    margin-top: -10px;
   }
 }
